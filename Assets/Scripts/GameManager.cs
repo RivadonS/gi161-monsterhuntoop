@@ -5,11 +5,30 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public Hero hero1;
+    public List<Monster> monsterPrefabs; //For Prefabs
+    public List<Monster> monsters = new List<Monster>(); //Monster
+    public Monster currentMonster;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         hero1.Init("Kratos", 100,  30);
         hero1.ShowStats();
+
+        currentMonster = Instantiate(monsterPrefabs[0]);
+        currentMonster.Init("Goblin", 50, 0, 5);
+        monsters.Add(currentMonster);
+        currentMonster.ShowStats();
+
+        currentMonster = Instantiate(monsterPrefabs[1]);
+        currentMonster.Init("Orc", 75, 0, 10);
+        monsters.Add(currentMonster);
+        currentMonster.ShowStats();
+
+        currentMonster = Instantiate(monsterPrefabs[2]);
+        currentMonster.Init("Dragon", 100, 0, 15);
+        monsters.Add(currentMonster);
+        currentMonster.ShowStats();
+
         /*
         //Create hero object
         Hero hero = new Hero("Kratos", 100, 50);

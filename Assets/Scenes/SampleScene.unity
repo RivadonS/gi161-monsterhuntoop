@@ -338,6 +338,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hero1: {fileID: 1770547880}
+  monsterPrefabs:
+  - {fileID: 205492171942725589, guid: bd68caf8b8c8a7f4fb031ac078de494c, type: 3}
+  - {fileID: 2847353782811842309, guid: 1c086ec708424744c81b56ecf3f6448e, type: 3}
+  - {fileID: 8467644224793427527, guid: 23c2ecfcb2139984b92e5658e1ee884b, type: 3}
+  monsters: []
+  currentMonster: {fileID: 0}
 --- !u!4 &1170536974
 Transform:
   m_ObjectHideFlags: 0
@@ -428,6 +434,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -449,6 +457,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
