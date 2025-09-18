@@ -6,7 +6,7 @@ public abstract class Character : MonoBehaviour //Abstract can't use to construc
     private string name;
     public string Name
     {
-        get => name; set => name = (string.IsNullOrEmpty(value)) ? "Unknown Hero Name" : value;
+        get => name; set => name = (string.IsNullOrEmpty(value)) ? "Unknown Name" : value;
     }
 
     private int health;
