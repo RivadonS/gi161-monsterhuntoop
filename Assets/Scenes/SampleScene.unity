@@ -339,10 +339,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hero1: {fileID: 1770547880}
   monsterPrefabs:
-  - {fileID: 205492171942725589, guid: bd68caf8b8c8a7f4fb031ac078de494c, type: 3}
-  - {fileID: 2847353782811842309, guid: 1c086ec708424744c81b56ecf3f6448e, type: 3}
-  - {fileID: 8467644224793427527, guid: 23c2ecfcb2139984b92e5658e1ee884b, type: 3}
+  - {fileID: 3002085870883880292, guid: bd68caf8b8c8a7f4fb031ac078de494c, type: 3}
+  - {fileID: 6427199552252924155, guid: 1c086ec708424744c81b56ecf3f6448e, type: 3}
+  - {fileID: 5163387084659217673, guid: 23c2ecfcb2139984b92e5658e1ee884b, type: 3}
   monsters: []
+  weaponPrefabs:
+  - {fileID: 2792320597824161177, guid: 695fac21af51180439b8734c5cde3165, type: 3}
+  - {fileID: 2462468894060007002, guid: 6063a3461cd608f4ea3b25c1446bacb4, type: 3}
   currentMonster: {fileID: 0}
 --- !u!4 &1170536974
 Transform:
@@ -434,8 +437,6 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -457,7 +458,6 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0

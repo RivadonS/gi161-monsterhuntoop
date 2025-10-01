@@ -402,9 +402,13 @@
 -analyzer:"D:/Unity/Unity 6.2/6000.0.58f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"D:/Unity/Unity 6.2/6000.0.58f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/Scripts/Character.cs"
+"Assets/Scripts/Dragon.cs"
 "Assets/Scripts/GameManager.cs"
+"Assets/Scripts/Goblin.cs"
 "Assets/Scripts/Hero.cs"
 "Assets/Scripts/Monster.cs"
+"Assets/Scripts/Orc.cs"
+"Assets/Scripts/Weapon.cs"
 -langversion:9.0
 /deterministic
 /optimize+

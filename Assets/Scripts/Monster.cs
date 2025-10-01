@@ -1,22 +1,22 @@
 using UnityEngine;
-public enum MonsterType
+/*public enum MonsterType
 {
     Goblin,
     Orc,
     Dragon
-}
+}*/
 
-public class Monster : Character
+public abstract class Monster : Character
 {
     private bool isDefeated;
 
-    private int lootGold;
-    public int LootGold
-    {
-        get => lootGold;
-        set => lootGold = value;
-    }
+    //private int lootGold;
+    //public int LootGold { get => lootGold; set => lootGold = value; }
 
+    //abstract property
+    public abstract int LootGold { get; }
+
+    /*
     //Constructor
     public void Init(MonsterType monsterType)//Difference parameter (method overloading)
     {
@@ -37,6 +37,7 @@ public class Monster : Character
         }
         isDefeated = false;
     }
+    */
 
     //Method
     public override void ShowStats()
@@ -44,6 +45,7 @@ public class Monster : Character
         base.ShowStats();
         Debug.Log($"Name: {Name} Loot Gold: {LootGold}");
     }
+    public abstract void Roar();
 
     public int DropReward()
     {
@@ -58,11 +60,13 @@ public class Monster : Character
     }
     */
 
+    
     public override void Attack(Character target)
     {
         target.TakeDamage(AttackPower);
-        Debug.Log($"Monster {Name} bite the hero {target.Name}");
+        //Debug.Log($"Monster {Name} bite the hero {target.Name}");
     }
+    
 
     public override void Attack(Character target, int bonusAttack)
     {

@@ -61,9 +61,13 @@
     <Analyzer Include="D:\Unity\Unity 6.2\6000.0.58f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Goblin.cs" />
     <Compile Include="Assets\Scripts\Character.cs" />
     <Compile Include="Assets\Scripts\Hero.cs" />
+    <Compile Include="Assets\Scripts\Orc.cs" />
+    <Compile Include="Assets\Scripts\Dragon.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Weapon.cs" />
     <Compile Include="Assets\Scripts\Monster.cs" />
   </ItemGroup>
   <ItemGroup>

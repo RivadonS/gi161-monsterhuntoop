@@ -4,6 +4,8 @@ using UnityEngine;
 public abstract class Character : MonoBehaviour //Abstract can't use to construct
 {
     //Property
+    public Weapon EquippedWeapon {  get; private set; }
+
     private string name;
     public string Name
     {
@@ -52,6 +54,12 @@ public abstract class Character : MonoBehaviour //Abstract can't use to construc
         return (Health > 0);
     }
 
+    public void EquipWeapon(Weapon weapon)
+    {
+        EquippedWeapon = weapon;
+    }
+
+
     /*
     public virtual void Attack(Character target)
     {
@@ -65,4 +73,15 @@ public abstract class Character : MonoBehaviour //Abstract can't use to construc
     public abstract void Attack(Character target, int bonusAttack);
 
     public abstract void OnDefeated();
+    //Overloaded Attack with weapon
+    public virtual void Attack(Character target, Weapon weapon)
+    {
+        if(weapon != null)//Check if hero/monster have weapon equip
+        {
+            int damage = AttackPower + weapon.BonusDamage;
+            target.TakeDamage(damage);
+            Debug.Log($"{Name} use a {weapon.WeaponName} with bonus " +
+                $"{weapon.BonusDamage} damage, Deal total {damage} damage to {target.Name}.");
+        }
+    }
 }
